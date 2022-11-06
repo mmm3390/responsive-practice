@@ -60,6 +60,7 @@
 .q5 {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .q5-1 {
@@ -93,6 +94,7 @@
 .q6 {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .q6-1 {
@@ -100,6 +102,7 @@
   height: 300px;
   background-color: #00ff51;
   position: relative;
+  order: 1;
 }
 
 .q6-2 {
@@ -107,6 +110,7 @@
   height: 300px;
   background-color: #d4ff00;
   position: relative;
+  order: 2;
 }
 
 .q6-3 {
@@ -114,6 +118,7 @@
   height: 300px;
   background-color: #ff00e1;
   position: relative;
+  order: 3;
 }
 
 .q7 {
@@ -125,6 +130,7 @@
   width: 300px;
   height: 300px;
   background-color: #ff0000;
+  display: block;
 }
 
 .q7-2 {
@@ -138,67 +144,52 @@
   width: 300px;
   height: 300px;
   background-color: #00ff51;
+  display: block;
 }
 
 @media screen and (max-width:960px){
   .q1 {
     width: 200px;
     height: 200px;
-    background-color: #ff0000;
   }
 
   .q2 {
-    width: 300px;
-    height: 300px;
     background-color: #007bff;
   }
 
   .q3-2 {
-    width: 300px;
-    height: 300px;
-    background-color: #22ff00;
     margin-left: 50px;
   }
 
   .q4-1 {
-    width: 300px;
-    height: 300px;
-    background-color: #ff0000;
     float: none;
   }
   
   .q4-2 {
-    width: 300px;
-    height: 300px;
-    background-color: #0008ff;
     float: none;
   }
 
   .q5 {
-    display: flex;
-    justify-content: center;
     flex-direction: row-reverse;
   }
 
+  .q6-1 {
+    order: 2;
+  }
+
+  .q6-2 {
+    order: 3;
+  }
+
   .q6-3 {
-    width: 300px;
-    height: 300px;
-    background-color: #ff00e1;
-    position: relative;
-    order: -1;
+    order: 1;
   }
 
   .q7-1 {
-    width: 300px;
-    height: 300px;
-    background-color: #ff0000;
     display: none;
   }
 
   .q7-2 {
-    width: 300px;
-    height: 300px;
-    background-color: #0008ff;
     display: block;
   }
 }
